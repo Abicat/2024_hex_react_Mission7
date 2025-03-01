@@ -1,0 +1,65 @@
+/* common */
+.loading {
+  font-size: 84px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  span {
+    display: inline-block;
+    margin: 0 -.05em;
+  }
+}
+
+
+/* loading01 文字動畫樣式 */
+.loading01 {
+    display: flex;
+    gap: 0.2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .loading01 span {
+    animation: loadingText 1.5s infinite ease-in-out;
+    display: inline-block;
+  }
+  
+  @keyframes loadingText {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(-10px);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* 讓每個字母的動畫稍微錯開 */
+  .loading01 span:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .loading01 span:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  .loading01 span:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  .loading01 span:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+  .loading01 span:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+  .loading01 span:nth-child(6) {
+    animation-delay: 0.5s;
+  }
+  .loading01 span:nth-child(7) {
+    animation-delay: 0.6s;
+  }
+  
